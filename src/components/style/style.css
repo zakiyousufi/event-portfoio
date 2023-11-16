@@ -1,0 +1,8 @@
+.home-header {
+  background-image: url(../../assets/home-event.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+}
