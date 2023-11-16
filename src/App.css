@@ -1,7 +1,16 @@
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
-
 :root {
   --color-primary: #FB8122;
   --color-secondary: #1D2228;
   --color-tertiary: #E1E2E2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pages {
+  padding: 0 10rem;
 }
