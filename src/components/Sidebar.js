@@ -18,15 +18,19 @@ import {
  import { SlMenu } from "react-icons/sl";
 
 const Sidebar = () => {
-  if (window.innerWidth < 1280){
-    return (
-      <button className="menu-btn">
-        <SlMenu />
-      </button>
-    );
-  }
+  const [sidebarVisible, setSidebarVisible] = useState(false);
+  const toggleSidebar = () => {
+    setSidebarVisible(!sidebarVisible);
+  };
+
   return (
-    <div className="sidebar col-md-2 col-sm-3 col-xs-12 p-l-0 p-r-0">
+    <>
+    <button className="menu-btn" onClick={toggleSidebar}>
+      <SlMenu />
+    </button>
+    <div className={`sidebar col-md-2 col-sm-3 col-xs-12 p-l-0 p-r-0 ${
+      sidebarVisible ? "show-sidebar" : "close-sidebar"
+    }`}>
       <img
         alt="Logo (YouthIGFA)"
         className="logo img-responsive"
@@ -85,6 +89,7 @@ const Sidebar = () => {
         </Link>
       </div>
     </div>
+    </>
   );
 }
 
