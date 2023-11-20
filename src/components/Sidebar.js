@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo.png";
 import "./style/sidebar.css";
@@ -15,8 +15,16 @@ import {
   FaQuestionCircle, 
   FaPhone
  } from "react-icons/fa";
+ import { SlMenu } from "react-icons/sl";
 
 const Sidebar = () => {
+  if (window.innerWidth < 1280){
+    return (
+      <button className="menu-btn">
+        <SlMenu />
+      </button>
+    );
+  }
   return (
     <div className="sidebar col-md-2 col-sm-3 col-xs-12 p-l-0 p-r-0">
       <img
