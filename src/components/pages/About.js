@@ -1,11 +1,13 @@
 import React from "react";
 import "../style/style.css";
-
+import Objectives2023 from "./Objectives23";
+import Objectives2024 from "./Objectives24";
+import History from "./History";
 const About = () => {
   return (
     <div className="d-flex justify-content-center align-items-center flex-column home pt-5">
       <h2 className="title mt-2">ABOUT US</h2>
-      <div className="d-flex justify-content-start flex-column w-100 pl-5 pr-4">
+      <div className="d-flex justify-content-start flex-column w-100 pl-4 pr-4">
         <p>
             In today's ever-growing digital age, the role of young people is undeniable, particularly in
             countries like Afghanistan where the youth population accounts for over 70%. While
@@ -86,6 +88,10 @@ const About = () => {
             setting precise benchmarks for YouthIGFA to pursue, producing tangible and measurable
             outcomes that ultimately shape a digital future in Afghanistan, with youth at the forefront
           </p>
+          <Objectives2023 />
+          <Objectives2024 />
+          <History />
+          
         </div>
     </div>
   );
