@@ -1,8 +1,10 @@
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+
 :root {
-  --color-primary: #FB8122;
+  --color-primary: rgb(254, 175, 58);
   --color-secondary: #1D2228;
   --color-tertiary: #E1E2E2;
+  --color-quaternary: #15191e;
 }
 
 * {
@@ -11,6 +13,11 @@
   box-sizing: border-box;
 }
 
+.App {
+  background-color: var(--color-quaternary);
+  color: var(--color-tertiary);
+}
+
 .pages {
-  padding: 0 10rem;
+  width: 100%;
 }

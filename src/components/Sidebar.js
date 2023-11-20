@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../assets/logo.png";
 import "./style/sidebar.css";
 
@@ -24,56 +25,56 @@ const Sidebar = () => {
         src={Logo}
       />
       <div className="sidebar-content">
-        <a href="#home" className="sidebar-link">
+        <Link to="/" className="sidebar-link">
           Home
           {' '}
           <FaHome className="sidebar-icon" />
-        </a>
-        <a href="#about" className="sidebar-link">
+        </Link>
+        <Link to="/about" className="sidebar-link">
           About
           {' '}
           <FaInfoCircle className="sidebar-icon" />
-        </a>
-        <a href="#events" className="sidebar-link">
+        </Link>
+        <Link to="/events" className="sidebar-link">
           Events
           {' '}
           <FaCalendarAlt className="sidebar-icon" />
-        </a>
-        <a href="#program" className="sidebar-link">
+        </Link>
+        <Link to="/program" className="sidebar-link">
           Program
           {' '}
           <FaGraduationCap className="sidebar-icon" />
-        </a>
-        <a href="#speakers" className="sidebar-link">
+        </Link>
+        <Link to="/speakers" className="sidebar-link">
             Speakers
             {' '}
             <FaUsers className="sidebar-icon" />
-        </a>
-        <a href="#resources" className="sidebar-link">
+        </Link>
+        <Link to="/resources" className="sidebar-link">
           Resources
           {' '}
           <FaBook className="sidebar-icon" />
-        </a>
-        <a href="#press" className="sidebar-link">
+        </Link>
+        <Link to="/press" className="sidebar-link">
           Press
           {' '}
           <FaNewspaper className="sidebar-icon" />
-        </a>
-        <a href="#partners" className="sidebar-link">
+        </Link>
+        <Link to="/partners" className="sidebar-link">
           Partners
           {' '}
           <FaHandshake className="sidebar-icon" />
-        </a>
-        <a href="#faq" className="sidebar-link">
+        </Link>
+        <Link to="/faq" className="sidebar-link">
           FAQ
           {' '}
           <FaQuestionCircle className="sidebar-icon" />
-        </a>
-        <a href="#contact" className="sidebar-link">
+        </Link>
+        <Link to="/contact" className="sidebar-link">
           Contact
           {' '}
           <FaPhone className="sidebar-icon" />
-        </a>
+        </Link>
       </div>
     </div>
   );
