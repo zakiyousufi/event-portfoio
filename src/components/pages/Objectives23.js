@@ -19,7 +19,7 @@ const Objectives2023 = () => {
       </div>
       {containerVisible && (
         <div>
-          <p>
+          <p className="pl-5">
             <strong>Youth Participation:</strong>
             <br />
             1. By the end of 2023, relaunch YouthIGFA
