@@ -3,6 +3,7 @@ import "../style/style.css";
 import Objectives2023 from "./Objectives23";
 import Objectives2024 from "./Objectives24";
 import History from "./History";
+import Team from "./Team";
 const About = () => {
   return (
     <div className="d-flex justify-content-center align-items-center flex-column home pt-5">
@@ -91,6 +92,7 @@ const About = () => {
           <Objectives2023 />
           <Objectives2024 />
           <History />
+          <Team />
           
         </div>
     </div>

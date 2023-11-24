@@ -19,7 +19,7 @@ const Objectives2024 = () => {
       </div>
       {containerVisible && (
         <div>
-         <p>
+         <p className="pl-5">
 
             <strong>Youth Participation:</strong>
             <br />

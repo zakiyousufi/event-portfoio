@@ -1,8 +1,8 @@
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
 
 :root {
-  --color-primary: rgb(254, 175, 58);
-  --color-secondary: #1D2228;
+  --color-primary: #fa934f;
+  --color-secondary: #0e0e0e;
   --color-tertiary: #E1E2E2;
   --color-quaternary: #15191e;
 }
