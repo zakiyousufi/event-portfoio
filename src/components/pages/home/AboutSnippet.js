@@ -20,5 +20,5 @@ const AboutSnippet = () => {
     </div>
   );
 }
-
+// https://youthi-gfa-af.vercel.app/
 export default AboutSnippet;
