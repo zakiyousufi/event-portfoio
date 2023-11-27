@@ -3,6 +3,7 @@ import Sidebar from './components/Sidebar';
 import './App.css';
 import Home from './components/pages/home/Home';
 import About from './components/pages/About';
+import GetInvolved from './components/pages/GetInvolved';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Routes>
               <Route path='/' exact element={<Home />} />
               <Route path='/about' element={<About />} />
+              <Route path='/get-involved' element={<GetInvolved />} />
           </Routes>
         </div>
       </Router>
