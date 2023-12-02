@@ -2,8 +2,8 @@ import React from "react";
 
 const Partners = () => {
   return(
-    <div className="pt-5">
-      <h4>Partners</h4>
+    <div className="d-flex justify-content-center align-items-center flex-column home pt-4 pr-4 vh-100">
+      <h2 className="title">Partners</h2>
       <div className="pl-4">
         <h5 className="title">Together, Crafting Digital Destinies</h5>
         <p>
