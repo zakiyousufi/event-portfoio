@@ -1,6 +1,5 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
+import React from "react";
+import { Carousel } from "react-bootstrap";
 
 const data = [
   {
@@ -79,21 +78,17 @@ const data = [
 
 const AboutSlider = () => {
   return (
-    <Swiper
-      className="h-100 w-100"
-      navigation={true}
-      loop={true}
-      autoplay={{
-        delay: 5000,
-        disableOnInteraction: false,
-      }}
+    <Carousel className="slider"
+      nextIcon={<span aria-hidden="true" className="carousel-control-next-icon slider-next slider-btn" />}
+      prevIcon={<span aria-hidden="true" className="carousel-control-prev-icon slider-prev slider-btn" />}
     >
       {data.map((item) => (
-        <SwiperSlide key={item.id}>
-          <div dangerouslySetInnerHTML={{ __html: item.content }} />
-        </SwiperSlide>
+        <Carousel.Item key={item.id}>
+          <div className="d-flex flex-column align-items-center"
+           dangerouslySetInnerHTML={{ __html: item.content }} />
+        </Carousel.Item>
       ))}
-    </Swiper>
+    </Carousel>
   );
 };
 
