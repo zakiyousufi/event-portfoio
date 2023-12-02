@@ -6,6 +6,7 @@ import History from "./History";
 import Team from "./Team";
 import Partners from "./Partners";
 import AboutSlider from "./AboutSlider";
+import Objective from "../../assets/objective.jpg";
 
 const About = () => {
   return (
@@ -25,19 +26,24 @@ const About = () => {
             <a href="#" className="link">Learn More</a>
           </p>
           <AboutSlider />
-          <h4>Objectives:</h4>
-          <p>
-            Our objectives are the driving force propelling us toward the realization of our mission and
-            goals. Set on an annual basis, these objectives play a crucial role in amplifying youth
-            participation, recognition, leadership, and collaboration. They serve as the guiding lights,
-            setting precise benchmarks for YouthIGFA to pursue, producing tangible and measurable
-            outcomes that ultimately shape a digital future in Afghanistan, with youth at the forefront
-          </p>
+          <div className="about-snippet d-flex justify-content-between mt-5">
+            <div className="divider d-flex flex-column justify-content-center">
+              <h4>Objectives:</h4>
+              <p>
+                Our objectives are the driving force propelling us toward the realization of our mission and
+                goals. Set on an annual basis, these objectives play a crucial role in amplifying youth
+                participation, recognition, leadership, and collaboration. They serve as the guiding lights,
+                setting precise benchmarks for YouthIGFA to pursue, producing tangible and measurable
+                outcomes that ultimately shape a digital future in Afghanistan, with youth at the forefront
+              </p>
+            </div>
+            <img className="w-50 ml-2 side-image"
+              src={Objective} alt="YouthIGFA" />
+          </div>
           <Objectives2023 />
           <Objectives2024 />
-          <History />
+          <History /> 
           <Team />
-          <Partners />
         </div>
     </div>
   );
