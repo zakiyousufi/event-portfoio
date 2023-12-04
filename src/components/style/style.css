@@ -152,7 +152,7 @@ p {
 
 .member-details{
   position: absolute;
-  bottom: 0;
+  bottom: 1.5rem;
   /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.315) 40%, rgba(0, 0, 0, 0.932) 70%); */
   border-radius: 0 0 50% 50% ;
   display: flex;
@@ -173,15 +173,23 @@ p {
 .member-details h6 {
   color: var(--color-primary);
   margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.member-details p {
+  font-size: 0.8rem;
+  margin-top: 0;
 }
 
 .user {
   border: 2px solid var(--color-primary);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .card {
   border-radius: 50%!important;
+  cursor: pointer;
 }
 
 .no-bg {
@@ -285,5 +293,103 @@ p {
 
   .link {
     font-size: 0.8rem;
+  }
+
+  .social-icon {
+    font-size: 1rem;
+  }
+
+  .slider {
+    padding: 1rem;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .slider-btn {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    z-index: 100000000;
+  }
+
+  .user {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .popup {
+    left: 0;
+    padding: 1rem;
+  }
+
+  .popup img {
+    width: 5rem;
+  }
+
+  .popup button {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .popup button:hover {
+    color: var(--color-tertiary);
+  }
+
+  .slider-next {
+    right: 0.5rem;
+  }
+
+  .slider-prev {
+    left: 0.5rem;
+  }
+
+  .arrow {
+    width: 2rem;
+  }
+
+  .no-bg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .no-bg:hover {
+    color: var(--color-tertiary);
+  }
+
+  .team-members {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card {
+    border-radius: 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100% !important;
+  }
+
+  .member-details {
+    opacity: 1;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: 5rem !important;
+    position: relative !important;
+    bottom: 0 !important;
+    padding: 0 1rem !important;
+  }
+
+  .member-details p {
+    color: var(--color-quaternary);
+  }
+
+  .user {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 1rem;
   }
 }
