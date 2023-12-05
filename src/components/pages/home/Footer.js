@@ -3,9 +3,9 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="mt-5 d-flex justify-content-center align-items-center flex-column w-100">
-      <h2 className="title">Get in Touch</h2>
-      <div className="d-flex justify-content-start flex-column w-100 pl-4">
+    <div className="d-flex justify-content-center align-items-center flex-column w-100">
+      <h2 className="title mt-2">Get in Touch</h2>
+      <div className="d-flex justify-content-start flex-column w-100 p-4">
         <p>
           Have questions or want to learn more about YouthIGFA? We're here to help! Feel
           free to reach out to us using the contact information below or use the inquiry form to
@@ -20,8 +20,8 @@ const Footer = () => {
           <p>Phone: +93777777777</p>
         </div>
       </div>
-      <h2 className="title">Stay updated!</h2>
-      <div className="d-flex justify-content-start flex-column pl-4">
+      <h2 className="title mt-2">Stay updated!</h2>
+      <div className="d-flex justify-content-start flex-column p-4">
         <p>
             Follow us on social media for the latest updates, news, and event announcements.
             Join the conversation and be part of YouthIGFA's vibrant online community
