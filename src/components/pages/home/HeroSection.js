@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 const HeroSection = () => {
   return (
@@ -7,8 +8,8 @@ const HeroSection = () => {
       <span className="caption">Empowering Afghan Youth in Internet Governance</span>
       <h3 className="cover">Join us in shaping Afghanistan's digital future.</h3>
       <div className="home-btn">
-        <a href="#about" className="btn-main">Learn More</a>
-        <a href="#events" className="btn-main">Get Involved</a>
+        <Link to="/about" className="btn-main">Learn More</Link>
+        <Link to="get-involved" className="btn-main">Get Involved</Link>
       </div>
     </div>
   )

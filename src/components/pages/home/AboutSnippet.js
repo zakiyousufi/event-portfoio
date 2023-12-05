@@ -1,5 +1,5 @@
 import React from "react";
-import SideImage from "../../../assets/About-Snippet.jpg";
+import SideImage from "../../../assets/About-Snippet.JPG";
 
 const AboutSnippet = () => {
   return (
@@ -20,5 +20,4 @@ const AboutSnippet = () => {
     </div>
   );
 }
-// https://youthi-gfa-af.vercel.app/
 export default AboutSnippet;
