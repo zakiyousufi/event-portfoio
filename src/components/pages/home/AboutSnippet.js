@@ -1,5 +1,5 @@
 import React from "react";
-import SideImage from "../../../assets/About-Snippet.JPG";
+import SideImage from "../../../assets/About-Snippet.jpg";
 
 const AboutSnippet = () => {
   return (
