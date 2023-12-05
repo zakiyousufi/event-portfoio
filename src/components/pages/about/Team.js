@@ -19,25 +19,19 @@ const Team = () => {
   };
 
   return (
-    <div className="p-3 mt-4">
-      <h4>Meet the Team: The Pulse Behind the Movement</h4>
-      <p>
-        Meet the dedicated individuals who drive YouthIGFA's mission and initiatives. Our team
-        consists of passionate professionals, youth leaders, and experts in the fields of internet
-        governance, youth empowerment, and digital technology.
-      </p>
+    <div className="pl-5">
       <div className="pl-4 mt-5">
-        <h5 className="title">Organizing Committee</h5>
+        <h5 className="title">Organizing Committee
+        <button className="btn-main" onClick={toggleContainer}>
+            {containerVisible ? "Hide members" : "Show members"} 
+            {' '}
+            {containerVisible ? <FaAngleUp /> : <FaAngleDown />}
+          </button>
+        </h5>
         <p>
           Our Organizing Committee plays a crucial role in planning and executing our annual events
           and programs. Composed of individuals committed to youth empowerment and digital
           transformation, they ensure the success of our initiatives.
-        </p>
-        <p>
-          {containerVisible ? "Hide members" : "Show members"}
-          <button className="arrow" onClick={toggleContainer}>
-            {containerVisible ? <FaAngleUp /> : <FaAngleDown />}
-          </button>
         </p>
         {containerVisible && (
           <div className="team-members justify-content-center d-flex flex-wrap align-items-center">
@@ -60,12 +54,7 @@ const Team = () => {
         <p>
           Our Secretariat is responsible for the day-to-day operations of YouthIGFA. They handle
           administrative tasks, manage communication, and ensure the smooth flow of information
-          among stakeholders.
-        </p>
-        <p>{containerVisible ? 'Hide members' : 'Show members' }
-          <button className="arrow" onClick={toggleContainer}>
-            {containerVisible ? <FaAngleUp /> : <FaAngleDown />}
-          </button>
+          among stakehol
         </p>
         {containerVisible && (
         <div className="team-members justify-content-center d-flex flex-wrap align-items-center">
@@ -76,7 +65,6 @@ const Team = () => {
                 <h6>{member.name}</h6>
                 <p className="small-text text-center">{member.position}
                   <br />
-                  <button type="button" className="link no-bg">Read More</button>
                 </p>
               </div>
             </div>
@@ -88,12 +76,7 @@ const Team = () => {
         <p>
           Our Advisory Committee consists of experts, mentors, and leaders in internet governance,
           youth empowerment, and digital technology. They provide valuable guidance and insights to
-          help shape the direction of YouthIGFA.
-        </p>
-        <p>{containerVisible ? 'Hide members' : 'Show members' }
-          <button className="arrow" onClick={toggleContainer}>
-            {containerVisible ? <FaAngleUp /> : <FaAngleDown />}
-          </button>
+          help shape the direction of Youth
         </p>
         {containerVisible && (
         <div className="team-members justify-content-center d-flex flex-wrap align-items-center">
@@ -102,7 +85,6 @@ const Team = () => {
               <img className="user" src={member.image} alt={member.name} />
               <div className="member-details">
                 <h6>{member.name}</h6>
-                  <button type="button" className="link no-bg">Read More</button>
                   <br />
               </div>
             </div>
@@ -114,12 +96,7 @@ const Team = () => {
         <p>
           Our Speakers and Trainers are industry experts and thought leaders who contribute
           significantly to our events and programs. They bring their knowledge and experience to
-          guide and inspire our participants.
-        </p>
-        <p>{containerVisible ? 'Hide members' : 'Show members' }
-          <button className="arrow" onClick={toggleContainer}>
-            {containerVisible ? <FaAngleUp /> : <FaAngleDown />}
-          </button>
+          guide and inspire our particip
         </p>
         {containerVisible && (
         <div className="team-members justify-content-center d-flex flex-wrap align-items-center">
@@ -128,7 +105,6 @@ const Team = () => {
               <img className="user" src={member.image} alt={member.name} />
               <div className="member-details">
                 <h6>{member.name}</h6>
-                  <button type="button" className="link no-bg">Read More</button>
                   <br />
               </div>
             </div>

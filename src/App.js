@@ -7,6 +7,8 @@ import GetInvolved from './components/pages/about/GetInvolved';
 import Partners from './components/pages/Partners';
 import Event from './components/pages/Event';
 import Contact from './components/pages/Contact';
+import Speakers from './components/pages/Speakers';
+import Team from './components/pages/about/Team';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
               <Route path='/partners' element={<Partners />} />
               <Route path='/events' element={<Event />} />
               <Route path='/contact' element={<Contact />} />
+              <Route path='/speakers' element={<Speakers />} />
+              <Route path='/about/team' element={<Team />} />
           </Routes>
         </div>
       </Router>

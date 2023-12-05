@@ -3,7 +3,7 @@ import "../../style/style.css";
 import Objectives2023 from "./Objectives23";
 import Objectives2024 from "./Objectives24";
 import History from "./History";
-import Team from "./Team";
+import { Link } from "react-router-dom";
 import AboutSlider from "./AboutSlider";
 import Objective from "../../../assets/objective.jpg";
 
@@ -42,7 +42,16 @@ const About = () => {
           <Objectives2023 />
           <Objectives2024 />
           <History /> 
-          <Team />
+          <div className="p-4 mb-5">
+            <h4>Meet the Team: The Pulse Behind the Movement</h4>
+            <p className="mb-4">
+              Meet the dedicated individuals who drive YouthIGFA's mission and initiatives. Our team
+              consists of passionate professionals, youth leaders, and experts in the fields of internet
+              governance, youth empowerment, and digital technology.
+            </p>
+            <br />
+            <Link to="/about/team" className="mt-4 btn-main">Organizing Team</Link>
+          </div>
         </div>
     </div>
   );
